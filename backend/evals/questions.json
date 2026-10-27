@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "description": "Representative research questions for evaluating the agent. key_terms is a list of groups; a group is matched when any of its terms appears in the report (case-insensitive). expected_behavior is given to the relevance judge.",
+  "questions": [
+    {
+      "id": "F1", "category": "factual", "time_sensitive": false,
+      "question": "When was the Python programming language first released, and who created it?",
+      "key_terms": [["1991"], ["Guido van Rossum", "van Rossum"]],
+      "expected_behavior": "States the first release year and the creator, citing a reliable source."
+    },
+    {
+      "id": "F2", "category": "factual", "time_sensitive": false,
+      "question": "What does the HTTP 429 status code mean, and which RFC defines it?",
+      "key_terms": [["Too Many Requests"], ["RFC 6585", "6585"]],
+      "expected_behavior": "Explains the status code's meaning and names the defining RFC."
+    },
+    {
+      "id": "F3", "category": "factual", "time_sensitive": false,
+      "question": "What is the half-life of carbon-14, and why does it make radiocarbon dating useful?",
+      "key_terms": [["5,730", "5730", "5,700", "5700"], ["radiocarbon", "dating"]],
+      "expected_behavior": "Gives the half-life with units and explains its role in dating organic material."
+    },
+    {
+      "id": "F4", "category": "factual", "time_sensitive": false,
+      "question": "Who wrote the paper 'Attention Is All You Need', and when was it published?",
+      "key_terms": [["Vaswani"], ["2017"]],
+      "expected_behavior": "Names the authors (at least the lead author) and the publication year and venue."
+    },
+    {
+      "id": "F5", "category": "factual", "time_sensitive": false,
+      "question": "What is the Server-Sent Events wire format, and how does a browser resume after a disconnect?",
+      "key_terms": [["text/event-stream"], ["Last-Event-ID"]],
+      "expected_behavior": "Describes the event/data/id fields and the Last-Event-ID reconnection mechanism."
+    },
+    {
+      "id": "C1", "category": "comparative", "time_sensitive": false,
+      "question": "Compare PostgreSQL and SQLite for a small multi-user web application.",
+      "key_terms": [["PostgreSQL"], ["SQLite"], ["concurren", "write", "lock"]],
+      "expected_behavior": "Compares both on concurrency, deployment and operational trade-offs, and gives a conditional recommendation."
+    },
+    {
+      "id": "C2", "category": "comparative", "time_sensitive": true,
+      "question": "Compare the free tiers of the Gemini API and the Groq API for building AI agents.",
+      "key_terms": [["Gemini"], ["Groq"], ["rate limit", "requests per minute", "RPM"]],
+      "expected_behavior": "Compares limits, available models and agent features (e.g. tool calling) for both, noting that limits change."
+    },
+    {
+      "id": "C3", "category": "comparative", "time_sensitive": false,
+      "question": "How do React and Vue differ in their approach to state management?",
+      "key_terms": [["React"], ["Vue"], ["Redux", "Zustand", "Context", "useState"], ["Pinia", "Vuex", "reactive"]],
+      "expected_behavior": "Contrasts the built-in reactivity models and the common state libraries of each."
+    },
+    {
+      "id": "C4", "category": "comparative", "time_sensitive": false,
+      "question": "Compare heat pumps and gas furnaces for heating homes in cold climates.",
+      "key_terms": [["heat pump"], ["furnace"], ["efficien", "COP", "coefficient of performance"], ["cost"]],
+      "expected_behavior": "Compares efficiency at low temperatures, running and installation costs, and emissions."
+    },
+    {
+      "id": "C5", "category": "comparative", "time_sensitive": false,
+      "question": "What are the trade-offs between Server-Sent Events and WebSockets for streaming live progress updates?",
+      "key_terms": [["Server-Sent Events", "SSE"], ["WebSocket"], ["one-way", "unidirectional", "bidirectional"]],
+      "expected_behavior": "Compares direction of communication, reconnection, proxies/infrastructure and complexity."
+    },
+    {
+      "id": "R1", "category": "recent", "time_sensitive": true,
+      "question": "What are the current free-tier rate limits of the Gemini API?",
+      "key_terms": [["requests per minute", "RPM"], ["requests per day", "RPD", "per day"]],
+      "expected_behavior": "Gives current limits from official or recent sources and warns that they change."
+    },
+    {
+      "id": "R2", "category": "recent", "time_sensitive": true,
+      "question": "What is the latest stable release of Python, and what are its headline features?",
+      "key_terms": [["Python 3."], ["release"]],
+      "expected_behavior": "Names the latest stable version with its release date and main new features, from python.org or similar."
+    },
+    {
+      "id": "R3", "category": "recent", "time_sensitive": true,
+      "question": "What are the most recent milestones in the implementation timeline of the EU AI Act?",
+      "key_terms": [["AI Act"], ["2025", "2026", "2027"]],
+      "expected_behavior": "Lists dated milestones (entry into force, obligations by date) from recent sources."
+    },
+    {
+      "id": "R4", "category": "recent", "time_sensitive": true,
+      "question": "What does OpenAI currently charge per million input tokens for its most capable publicly available API model?",
+      "key_terms": [["per million", "1M", "million tokens"], ["$"]],
+      "expected_behavior": "Gives a current price from the official pricing page and names the model, noting the date checked."
+    },
+    {
+      "id": "R5", "category": "recent", "time_sensitive": true,
+      "question": "What major features were introduced in the most recent major release of React?",
+      "key_terms": [["React"], ["release"]],
+      "expected_behavior": "Identifies the latest major version and its key features from react.dev or recent sources."
+    },
+    {
+      "id": "X1", "category": "uncertain", "time_sensitive": false,
+      "question": "Does intermittent fasting lead to more long-term weight loss than daily calorie restriction?",
+      "key_terms": [["intermittent fasting"], ["calorie restriction"], ["trial", "study", "meta-analys"]],
+      "expected_behavior": "Summarises the evidence, notes where studies disagree or are limited, and avoids an overconfident verdict."
+    },
+    {
+      "id": "X2", "category": "uncertain", "time_sensitive": false,
+      "question": "Is moderate coffee consumption good or bad for heart health?",
+      "key_terms": [["coffee"], ["heart", "cardiovascular"]],
+      "expected_behavior": "Presents findings on both sides, distinguishes observational from trial evidence, and states uncertainty."
+    },
+    {
+      "id": "X3", "category": "uncertain", "time_sensitive": true,
+      "question": "What will the average price of lithium carbonate be in 2030?",
+      "key_terms": [["lithium"], ["forecast", "projection", "estimate", "uncertain"]],
+      "expected_behavior": "Makes clear that this is a forecast, reports sourced projections with their ranges, and does not present a single number as fact."
+    },
+    {
+      "id": "X4", "category": "uncertain", "time_sensitive": false,
+      "question": "Exactly how many monthly active users does the Tavily search API have?",
+      "key_terms": [["Tavily"]],
+      "expected_behavior": "Says that an exact, verified figure was not found (unless a source states one) rather than inventing a number."
+    },
+    {
+      "id": "X5", "category": "uncertain", "time_sensitive": false,
+      "question": "Do standing desks improve office workers' productivity?",
+      "key_terms": [["standing desk", "sit-stand"], ["productiv"]],
+      "expected_behavior": "Reports mixed or limited evidence honestly and separates productivity from health outcomes."
+    }
+  ]
+}

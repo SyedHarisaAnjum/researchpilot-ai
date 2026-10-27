@@ -1,0 +1,4 @@
+# Keep LF line endings so Dockerfiles, shell commands and configs work in Linux containers.
+* text=auto eol=lf
+*.png binary
+*.svg text eol=lf

@@ -1,0 +1,15 @@
+Database migrations (Alembic). Run these from the backend/ folder with the venv active.
+
+The app applies pending migrations automatically when it starts.
+
+After changing app/db/models.py, create a migration and review it before committing:
+    alembic revision --autogenerate -m "describe the change"
+    alembic upgrade head
+
+Other useful commands:
+    alembic current          # which revision the database is at
+    alembic history          # all revisions
+    alembic downgrade -1     # undo the last migration
+
+The database URL comes from DATABASE_URL in .env (not alembic.ini).
+SQLite uses batch mode, because it can't ALTER most columns in place.

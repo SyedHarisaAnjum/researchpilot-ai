@@ -1,0 +1,23 @@
+# Secrets: never commit these
+.env
+.env.*
+!*.example
+!frontend/.env.development
+
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Local data
+*.db
+*.db-wal
+*.db-shm
+*.db.bak*
+*.bak
+backend/evals/results/
+
+# Node
+node_modules/
+dist/

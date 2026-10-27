@@ -1,0 +1,5 @@
+-r requirement.txt
+pytest==9.1.1
+pytest-asyncio==1.4.0
+fakeredis==2.40.0
+pypdf==6.21.2

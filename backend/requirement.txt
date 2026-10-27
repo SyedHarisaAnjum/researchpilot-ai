@@ -1,0 +1,26 @@
+# Runtime dependencies, pinned to the versions the test suite passes with.
+# Development and test tools: requirements-dev.txt
+fastapi==0.162.0
+uvicorn[standard]==0.54.0
+pydantic==2.14.1
+pydantic-settings==2.15.0
+python-dotenv==1.2.4
+
+# Agent
+google-genai==2.33.0
+langgraph==1.2.17
+httpx==0.28.1
+beautifulsoup4==4.15.0
+tenacity==9.1.4
+
+# Storage and jobs
+SQLAlchemy==2.0.55
+alembic==1.20.1
+aiosqlite==0.22.1
+asyncpg==0.32.0
+arq==0.28.0
+redis==5.3.1
+
+# Reports
+Markdown==3.10.3
+xhtml2pdf==0.2.28
